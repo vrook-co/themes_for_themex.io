@@ -26,12 +26,12 @@ from six import text_type
       %>
       % if course.advertised_start is not None:
         <div class="course-date-wrap">
-          <svg><use xlink:href="#icon-clock" /></svg>
+         <!-- <svg><use xlink:href="#icon-clock" /></svg>-->
           <div class="course-date" aria-hidden="true">${_("Starts")}: ${course.advertised_start}</div>
         </div>
       % else:
         <div class="course-date-wrap">
-          <svg><use xlink:href="#icon-clock" /></svg>
+          <!--<svg><use xlink:href="#icon-clock" /></svg>-->
           <div class="course-date localized_datetime" aria-hidden="true" data-format="shortDate" data-datetime="${course_date_string}" data-string="${_("Starts: {date}")}"></div>
         </div>
       % endif
@@ -52,4 +52,5 @@ from six import text_type
 </article>
 <%static:require_module_async module_name="js/dateutil_factory" class_name="DateUtilFactory">
     DateUtilFactory.transform(iterationKey=".localized_datetime");
-</%static:require_module_async>
+</%static:requ:wq
+ire_module_async>
