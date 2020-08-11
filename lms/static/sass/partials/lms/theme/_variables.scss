@@ -1,13 +1,13 @@
 //main stack of collors
 $theme-colors: (
-  "primary": #ff9000,
+  "primary": #2c2c2c,
   "inverse": #fffefe,
 );
-$blue: #f5ec32;
+$blue: #ffdf00;
 $base-color: $blue;
 $base-color2: #8888b7;
 $base-color2-hover: lighten($base-color2, 20%);
-$base-attention-color: #fff;
+$base-attention-color: #b2b2b2;
 $btn-bg-hover: lighten($base-color, 20%);
 
 

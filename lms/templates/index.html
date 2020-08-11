@@ -9,7 +9,7 @@ from openedx.core.djangolib.markup import HTML, Text
 %>
 
 <%block name="bodyclass">home-page</%block>
-
+<meta name="viewport" content="initial-scale=1">
 <main id="main" aria-label="Content" tabindex="-1">
     <section class="home">
       <div class="slider slider-separate">
@@ -20,7 +20,7 @@ from openedx.core.djangolib.markup import HTML, Text
                 ${homepage_overlay_html | n, decode.utf8}
               % else:
                 ## Translators: 'Open edX' is a registered trademark, please keep this untranslated. See http://open.edx.org for more information.
-                <p>${_("the best theme for education")}</p>
+                <p>${_("transforming learning")}</p>
                 ## Translators: 'Open edX' is a registered trademark, please keep this untranslated. See http://open.edx.org for more information.
                 <h1>${_("Welcome to Vrook!")}</h1>
                 <a href="${reverse('dashboard')}" class="slider-btn">${_("Explore courses")}</a>
@@ -36,7 +36,7 @@ from openedx.core.djangolib.markup import HTML, Text
                 ${homepage_overlay_html | n, decode.utf8}
               % else:
                 ## Translators: 'Open edX' is a registered trademark, please keep this untranslated. See http://open.edx.org for more information.
-                <p>${_("the best theme for education")}</p>
+                <p>${_("transforming learning")}</p>
                 ## Translators: 'Open edX' is a registered trademark, please keep this untranslated. See http://open.edx.org for more information.
                 <h1>${_("Welcome to Vrook!")}</h1>
                 <a href="${reverse('dashboard')}" class="slider-btn">${_("Explore courses")}</a>

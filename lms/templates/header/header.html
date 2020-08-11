@@ -135,12 +135,12 @@ from openedx.core.djangoapps.lang_pref.api import header_language_selector_is_en
     <nav class="header-nav">
         <div class="wrap">
             <ul class="header-nav-list">
-                <li><a class="header-nav__link" href="#">${_("About the university")}</a></li>
-                <li><a class="header-nav__link" href="#">${_("Courses")}</a></li>
+                <li><a class="header-nav__link" href="https://vrook.co/about-us/">${_("About Vrook")}</a></li>
+                <li><a class="header-nav__link" href="/courses">${_("Courses")}</a></li>
                 <li><a class="header-nav__link" href="#">${_("Features")}</a></li>
-                <li><a class="header-nav__link" href="#">${_("Sertification center")}</a></li>
-                <li><a class="header-nav__link" href="#">${_("Blog")}</a></li>
-                <li><a class="header-nav__link" href="#">${_("Contact us")}</a></li>
+                <li><a class="header-nav__link" href="#">${_("Certification center")}</a></li>
+                <li><a class="header-nav__link" href="/blog">${_("Blog")}</a></li>
+                <li><a class="header-nav__link" href="https://vrook.co/contact-us/">${_("Contact us")}</a></li>
             % if user.is_authenticated:
                 % if show_dashboard_tabs:
                   <li>
